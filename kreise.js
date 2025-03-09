@@ -75,14 +75,14 @@ function movePlayer(obj) {
 function adjwidheigwetba()
 {
     let newval = Math.min((window.innerHeight * window.innerWidth ) / 1500, 512);
-    console.log("nv: " + newval);
+ 
     wetterbal.height = newval;
     wetterbal.width = newval;
 }
 function adjustheightbar(heightbar)
 {
     let heightbarrn = -parseFloat(background.style.bottom)*12 + 5000;
-    console.log(heightbarrn);
+  
     heightbar.innerHTML = "Höhe: " + heightbarrn + " km";
 
 }
@@ -197,7 +197,6 @@ class questionbutton
         this.x = x;
         this.y = y;
         let object = createElementFromHTML('<div class="btnq" style="border-radius: 50%; top: ' + x + '%;  left: ' + y  +'%;height: 100px; width: 100px;background-color: white; position: absolute;"></div>');
-        console.log(object);
         boxes.append(object);
         object.append(createElementFromHTML('<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10.125 8.875C10.125 7.83947 10.9645 7 12 7C13.0355 7 13.875 7.83947 13.875 8.875C13.875 9.56245 13.505 10.1635 12.9534 10.4899C12.478 10.7711 12 11.1977 12 11.75V13" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <circle cx="12" cy="16" r="1" fill="#1C274C"></circle> <path d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>'))
         object.addEventListener('mouseenter', (ev) => {
@@ -261,7 +260,7 @@ class start
     }
 }
 console.log(boxes);
-let but4 = new questionbutton("Der Nationale Wetterdienst in Lincon lässt zweimal täglich einen Wetterballon steigen... Aber was wohin fliegt dieser eigentlich?", 92, 5, background, "white2");
+let but4 = new questionbutton("Der Nationale Wetterdienst in Lincon lässt zweimal täglich einen Wetterballon steigen... Aber was wohin fliegt dieser eigentlich?", 92, 5, background, "white");
 console.log(but4);
 let but2 = new questionbutton("Wir betreten die Troposphäre. In ihr spielen sich mit dem Wetter verbundene Ereignisse wie z.B. Wolkenbildung ab. Außerdem umfasst die Troposphäre 80% der Masse der gesamten Atmosphäre!", 85, 5, background, "black");
 let but1 = new questionbutton("Brrrr! Hier bei der Tropopause, die in ca. 15 km Höhe liegende Grenze der Troposphäre, kommt es zu Temperaturen von bis zu minus 80 Grad Celsius. ", 74.2, 5, background, "black");
