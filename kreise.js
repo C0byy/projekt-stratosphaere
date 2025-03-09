@@ -261,7 +261,7 @@ class start
     }
 }
 console.log(boxes);
-let but4 = new questionbutton("Der Nationale Wetterdienst in Lincon lässt zweimal täglich einen Wetterballon steigen... Aber was wohin fliegt dieser eigentlich?", 92, 5, background, "yellow");
+let but4 = new questionbutton("Der Nationale Wetterdienst in Lincon lässt zweimal täglich einen Wetterballon steigen... Aber was wohin fliegt dieser eigentlich?", 92, 5, background, "white");
 let but2 = new questionbutton("Wir betreten die Troposphäre. In ihr spielen sich mit dem Wetter verbundene Ereignisse wie z.B. Wolkenbildung ab. Außerdem umfasst die Troposphäre 80% der Masse der gesamten Atmosphäre!", 85, 5, background, "black");
 let but1 = new questionbutton("Brrrr! Hier bei der Tropopause, die in ca. 15 km Höhe liegende Grenze der Troposphäre, kommt es zu Temperaturen von bis zu minus 80 Grad Celsius. ", 74.2, 5, background, "black");
 let but3 = new questionbutton("Mit zunehmender Höhe wird es immer kälter. Pro 1 km nimmt die Temperatur um ca. 6.5 Grad Celsius ab.", 80, 5, background, "black");
