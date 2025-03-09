@@ -1,7 +1,7 @@
 let canvas = document.getElementById("canvas");
 let background = document.getElementById("background");
 let box1 = document.getElementById("box");
-let boxes = document.getElementById("boxes"); // ?
+let boxes = document.getElementById("boxes"); 
 console.log(box1);
 let svgStr = `<img src="wetterballonbild.png" width="512px" height="512px">
 </img>`;
